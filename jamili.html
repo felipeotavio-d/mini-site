@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Padaria do Minoba</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fff8f0;
+      color: #5b3a29;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      min-height: 500px;
+    }
+
+    /* Cabeçalho */
+    .header {
+      grid-column: 1 / 3;
+      background-color: #d97d54;
+      padding: 25px;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.15);
+    }
+
+    /* Menu lateral */
+    .menu {
+      background-color: #f9e7d3;
+      padding: 20px;
+      border-radius: 0 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .menu a {
+      color: #5b3a29;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .menu a:hover {
+      color: #d97d54;
+      text-decoration: underline;
+    }
+
+    /* Conteúdo principal */
+    .content {
+      padding: 25px;
+      font-size: 1.15rem;
+      line-height: 1.5;
+      color: #3e2a19;
+    }
+    .content h3 {
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #d97d54;
+    }
+
+    /* Rodapé */
+    .footer {
+      grid-column: 1 / 3;
+      background-color: #d97d54;
+      color: white;
+      padding: 18px 25px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 -2px 5px rgb(0 0 0 / 0.15);
+    }
+    .footer p {
+      margin-bottom: 8px;
+    }
+    .footer a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #fce9db;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Padaria do Minoba</h2>
+    </div>
+    <nav class="menu">
+      <a href="#">Pães</a>
+      <a href="#">Bolos</a>
+      <a href="#">Salgados</a>
+    </nav>
+    <main class="content">
+      <h3>Padaria do Minoba</h3>
+      <p>Onde seu dia começa com sabor e carinho! ❤️</p>
+    </main>
+    <footer class="footer">
+      <p>Siga nossas redes sociais:</p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </footer>
+  </div>
+</body>
+</html>
